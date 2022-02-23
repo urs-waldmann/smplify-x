@@ -1,0 +1,12 @@
+# Set-up CUDA 10.2
+Instructions: https://gist.github.com/wangruohui/df039f0dc434d6486f5d4d098aa52d07#install-nvidia-graphics-driver-via-runfile (messy)
+- Download CUDA Toolkit 10.2 (cuda_10.2.89_440.33.01_linux.run) [into home dir]: https://developer.nvidia.com/cuda-10.2-download-archive?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1804&target_type=runfilelocal
+- Install the nvidia driver: Use the nvidia driver (NVIDIA-Linux-x86_64-440.33.01.run) that I can extract from CUDA Toolkit 10.2 (c.f. 'Install CUDA' in instructions; --extract creates folder cublas, cuda-samples, cuda-toolkit, integration and file NVIDIA-Linux-x86_64-440.33.01.run)
+
+- export PATH=~/cuda-toolkit/bin:$PATH
+- export LD_LIBRARY_PATH=~/cuda-toolkit/lib64:$LD_LIBRARY_PATH
+
+# Set-up environment (Use venv!!! not anaconda)
+Intructions: https://www.yuchen.xyz/2021/04/23/SMPLify-X%20Quick%20Start/
+- Use Error Installing torch-mesh-isect (UNSOLVED) - Solution 1 (UNVERIFIED)
+
